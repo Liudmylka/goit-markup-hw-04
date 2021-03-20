@@ -715,8 +715,11 @@ li:nth-child(n + 7) {
   color: var(--title);
 }
 .site-link {
-  background-color: ;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  display: inline;
+  align-items: center;
+  justify-content: center;
   margin-top: 0px;
   padding-left: 12px;
   padding-right: 12px;
