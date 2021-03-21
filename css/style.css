@@ -89,20 +89,20 @@ ul {
   margin: 0;
   padding-left: 0px;
 }
-.mail {
-  fill: var(--text--small-text);
+.mail-link {
+  fill: currentColor;
   width: 16px;
   height: 12px;
   margin-right: 10px;
   margin-top: 0px;
 }
-.mail:hover,
-.mail:focus,
-.mail:active {
+.mail-link:hover,
+.mail-link:focus,
+.mail-link:active {
   fill: #2196f3;
 }
 .phone {
-  fill: var(--text--small-text);
+  fill: currentColor;
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -312,8 +312,8 @@ button {
   overflow: hidden;
 }
 .page-link {
-  display: inline-block;
-  align-items: stretch;
+  display: flex;
+  align-items: center;
   justify-content: space-around;
   padding-top: 32px;
   padding-right: 0px;
@@ -379,7 +379,6 @@ button {
   align-items: center;
 }
 .icon {
-  fill: #212121;
   width: 70px;
   height: 70px;
 }
@@ -480,6 +479,7 @@ img {
   padding-left: 15px;
 }
 .team-one {
+  background-color: #ffffff;
   display: block;
   margin-left: 0px;
   margin-right: 30px;
@@ -489,6 +489,7 @@ img {
 }
 
 .team-last {
+  background-color: #ffffff;
   display: block;
   margin-left: 0px;
   margin-right: 0px;
@@ -503,7 +504,6 @@ img {
   font-size: 16px;
   line-height: 118%;
   letter-spacing: 0.03em;
-  width: 134px;
   text-align: center;
   white-space: pre;
   margin: 0 auto;
@@ -522,28 +522,31 @@ img {
 .icon-two {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 .one-card {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 16px;
+  padding-left: 0px;
 }
 .social-link {
   background-color: transparent;
   border-radius: 50%;
   margin-top: 0px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
 }
 
 .social-link:hover,
 .social-link:focus,
 .social-link:active {
-  fill: var(--title);
+  color: var(--title);
   background-color: #2196f3;
 }
 .title-small {
